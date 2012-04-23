@@ -1,0 +1,8 @@
+node_modules
+.DS_Store*
+*.swp
+*.pyc
+server.log
+fabfile.py
+_build
+builtAssets

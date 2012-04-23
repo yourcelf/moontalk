@@ -1,0 +1,60 @@
+a(href='/') Home
+h2 Schedule a meeting
+p
+  :markdown
+    We need to schedule a meeting!  But we can only talk over an 
+    extremely narrow, limited band.
+h2 Iterations
+ol
+  li
+    :markdown
+      Everyone is blindfolded.  Only one person can talk at a time, called on
+      by facilitator.  The facilitator calls on the first person to raise their
+      hand after someone has finished speaking.
+  li
+    :markdown
+      Everybody gets new times.  Before starting again, develop a process as a
+      group for how to arrive at a decision over the limited channel.  A single
+      additional channel is added: clapping.  You can clap any time you want
+      to.  The group should decide together how they are going to use this
+      channel, and what it will mean..
+p Depending on group size, run for 3 minutes or so each.
+h2 Reflection questions
+ol
+  li What's the role of an agreed-upon process here?
+  li 
+    :markdown
+      What's the role of simple additional communication channels like
+      agreement/disagreement?
+  li
+    :markdown
+      Scheduling is one thing.  What about other types of decisions?  How could
+      processes be extended to support other types of communication?
+  li
+    :markdown
+      How did it feel to try to use this channel without being used to it?
+h2 Generate
+form.generate(action='', method='get')
+  table
+    tr
+      td
+        label(for='num_players') Number of players:
+      td
+        input#num_players(type='text', value='10')
+    tr
+      td
+      td
+        input(type='submit', class='cta cta-green', value='Generate Game')
+
+p
+  :markdown
+    Each person is available for only 3 times.  Write them down on a piece of
+    paper or sticky note and hand to each person.
+
+table.schedule-game
+  tr
+    td.game-assignments
+    td.scoring
+
+p
+  a.cta.cta-yellow(href='/decide/') Next: decide what to do.

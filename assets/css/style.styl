@@ -1,0 +1,54 @@
+// Mixins
+@import "normalize.css"
+@import "buttons.css"
+
+background-rgba(r, g, b, a)
+  // rgba with fallback to rgb
+  background-color: rgb(r, g, b)
+  background-color: rgba(r, g, b, a)
+
+// Main
+body
+  background: url("/img/nami.png")
+  color: #eee
+  font-family: Dosis,serif
+  font-size: 18px
+
+a:link, a:visited
+  color: #09f
+a:link.cta, a:visited.cta
+  color: white
+
+#main
+  margin: 1em
+  background: transparent
+  background: rgba(255, 255, 255, 0.1)
+  display: inline-block
+  border: 1px solid #000
+  padding: 1em
+  p,li
+    max-width: 33em
+  .schedule-game td
+    vertical-align: top
+    padding: 1em
+  input[type=text]
+    border: 3px solid black
+    background: #ccc
+    font-family: inherit
+    padding: 0.2em
+    color: black
+    width: 5em
+    
+@media print
+  #main
+    border: none
+    font-size: 14px
+    p,li
+      max-width: 40em
+    li
+      margin-top: 1em
+  .game-assignments
+    li
+      margin-top: 0.5em
+      padding-bottom: 0.5em
+      border-bottom: 1px solid black
